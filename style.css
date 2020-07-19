@@ -25,6 +25,7 @@ body {
 #flags {
     height: 80%;
     width: 6vmax;
+    max-width: 40px;
 }
 #flags-icon {
     width: 100%;
