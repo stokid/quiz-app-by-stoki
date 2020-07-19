@@ -65,7 +65,7 @@ document.getElementById("flags-icon").onclick = function() {
         document.getElementById("usernameForm").firstElementChild.innerText = "Az Ön neve: ";
     } else { 
         document.getElementById("flags-icon").src = "pic/Hopstarter-Flag-Borderless-Hungary.ico";
-        document.getElementById("game-comfirm-button").innerText = "I appoint it!!!";
+        document.getElementById("game-comfirm-button").innerText = "I appoint it!";
         document.getElementById("usernameForm").firstElementChild.innerText = "Your name: ";
     }
     console.log("inEnglish: " + inEnglish);
@@ -226,7 +226,7 @@ function generateQuestion () {
         }
     } else {
         if (inEnglish) {
-            document.getElementById("game-master-area-text").innerHTML ="CONGRATULATIONS, YOU WIN THE GAME!";
+            document.getElementById("game-master-area-text").innerHTML ="CONGRATULATIONS, YOU WON!";
         } else {
             document.getElementById("game-master-area-text").innerHTML ="GRATULÁLOK, VÉGIGMENT A JÁTÉKON";
         }
