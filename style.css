@@ -13,6 +13,8 @@ body {
     min-width: 320px;
     box-sizing: border-box;
 }
+
+/* Score table elements -START- */
 #score-table {
     width: 100%;
     height: 6vh;
@@ -32,17 +34,20 @@ body {
     width: 100%;
     height: 100%;
 }
+/* Score table elements -END- */
+
+/* Game community elements -START- */
 #game-community {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 44vh;
+    height: 48vh;
     background-color: black;
 }
 #game-master {
     display: flex;
     width: auto;
-    height: 80%;
+    height: 85%;
     background-color: black;
     
 }
@@ -75,20 +80,22 @@ body {
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 100%;
+    height: 15%;
+    padding: 10px;
 }
 #game-comfirm-button {
     width: 150px;
     height: 80%;
     max-height: 45px;
-    /* border-color: darkgreen; */
     border: 2px solid darkgreen;
     font-weight: bold;
-    
 }
+/* Game community elements -END- */
+
+/* Game field elements -START-  */
 #game-field {
     width: 100%;
-    height: 40vh;
+    height: 46vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,6 +112,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+/* Game field elements -END-  */
 
 
 /* CLASS -START- */
