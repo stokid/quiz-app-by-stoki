@@ -55,6 +55,16 @@ var questions = [
 
 console.log(questions[questionNumber].getMessage(questions[questionNumber].getAnswers()));
 
+window.onload = function() {
+    let browserHeight = window.innerHeight;
+    document.getElementsByTagName("BODY")[0].height = window.innerHeight;
+    console.log(document.getElementsByTagName("BODY")[0].height);
+
+    document.getElementById("score-table").style.height = browserHeight * 0.06 + "px";
+    document.getElementById("game-community").style.height = browserHeight * 0.48 + "px";
+    document.getElementById("game-field").style.height = browserHeight * 0.46 + "px";
+}
+
 document.getElementById("flags-icon").onclick = function() {
     inEnglish = !inEnglish;
     inHungarian = !inHungarian;
