@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  type="text/css"  href="../libraries/aos-master/aos-master/dist/aos.css">
+    <link rel="javascript" href="quiz.js">
+    </head>
+    <body>
+        <div id="score-table">
+            <h4 id="welcome-message">Hey </h4>
+            <h4 id="score-message">Score: </h4>
+            <div id="flags"><img id="flags-icon" src="pic/Hopstarter-Flag-Borderless-Hungary.ico" alt=""></div>
+            <h4 id="refresh">&#8635;</h4>
+        </div>
+        <div id="game-community">
+            <div id="game-master">
+                <div id="game-master-area">
+                    <div id="game-master-area-bubble" class="bubble" data-aos="zoom-in" data-aos-duration="600">
+                        <p id="game-master-area-text">How can I call you?</p>
+                    </div>
+                </div>
+                <div id="game-master-picture">
+                    <img src="pic/20080311vago1.jpg" alt="">
+                </div>
+            </div>
+            <div id="game-comfirm">
+                <button id="game-comfirm-button" disabled>
+                    I appoint it!!!
+                </button>
+                <div></div>
+            </div>
+
+        </div>
+        <div id="game-field">
+            <form id="usernameForm" action="quiz.js">
+                <label for="fname">Your name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <div id="question" style="display: none;">
+            </div>
+            <div id="answers" style="display: none;">
+                <button id="answer-1" class="answer" value=""></button>
+                <button id="answer-2" class="answer" value=""></button>
+                <button id="answer-3" class="answer" value=""></button>
+                <button id="answer-4" class="answer" value=""></button>
+            </div>
+        </div>
+        <script src="quiz.js"></script>
+        <script src="../libraries/aos-master/aos-master/dist/aos.js"></script>
+        <script>AOS.init();</script>
+    </body>
+    
+</html>
