@@ -35,13 +35,28 @@ body {
     height: 100%;
 }
 /* Score table elements -END- */
+/* User inputform -START- */
+#usernameForm {
+    
+}
+#genderField {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+#gender {
+    display: flex;
+    flex-direction: column;
+}
+/* User inputform -END- */
 
 /* Game community elements -START- */
 #game-community {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 48vh;
+    height: 47vh;
     background-color: black;
 }
 #game-master {
@@ -95,7 +110,7 @@ body {
 /* Game field elements -START-  */
 #game-field {
     width: 100%;
-    height: 46vh;
+    height: 47vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,7 +119,7 @@ body {
     color: white;
 }
 #question {
-    padding: 3%;
+    padding: 0px 5px;
 }
 #answers {
     display: flex;
@@ -125,8 +140,8 @@ body {
     border-color: white;
     border-radius: 30px;
     width: 40vw;
-    height: 5vh;
-    min-height: 21px;
+    height: 6vh;
+    min-height: 35px;
     min-width: 200px;
     max-width: 320px;
     border-style: solid;
@@ -154,6 +169,7 @@ p {}
 
     display: flex;
     justify-content: center;
+    align-items: center;
     
 
     word-wrap: break-word;
