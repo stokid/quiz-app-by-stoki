@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width">
     <!-- Style -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet"  type="text/css"  href="../libraries/aos-master/aos-master/dist/aos.css">
     <link rel="javascript" href="quiz.js">
     </head>
     <body>
         <div id="score-table">
-            <h4 id="welcome-message">Hey </h4>
+            <h4 id="welcome-message">Szia </h4>
             <h4 id="score-message">Score: </h4>
             <div id="flags"><img id="flags-icon" src="pic/Hopstarter-Flag-Borderless-Hungary.ico" alt=""></div>
             <h4 id="refresh">&#8635;</h4>
@@ -20,7 +20,7 @@
             <div id="game-master">
                 <div id="game-master-area">
                     <div id="game-master-area-bubble" class="bubble" data-aos="zoom-in" data-aos-duration="600">
-                        <p id="game-master-area-text">How can I call you?</p>
+                        <p id="game-master-area-text">Hogy hívhatom a legújabb versenyzőmet?</p>
                     </div>
                 </div>
                 <div id="game-master-picture">
@@ -29,7 +29,7 @@
             </div>
             <div id="game-comfirm">
                 <button id="game-comfirm-button" disabled>
-                    I appoint it!
+                    MEGJELÖLÖM!
                 </button>
                 <div></div>
             </div>
@@ -37,8 +37,22 @@
         </div>
         <div id="game-field">
             <form id="usernameForm" action="quiz.js">
-                <label for="fname">Your name:</label>
-                <input type="text" id="fname" name="fname"><br><br>
+                <label for="fname">Név:</label>
+                <input type="text" id="fname" name="fname"><br>
+                <div id="genderField">
+                    <div id="genders">Nem: </div>
+                    <div id="gender">
+                        <div class="renderRight">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label id="male-label" for="male">Férfi</label><br>
+                        </div>
+                        <div class="renderRight">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label id="female-label" for="female">Nő</label><br>
+                        </div>
+                    </div>
+                </div>
+                
                 <input type="submit" value="Submit">
             </form>
             <div id="question" style="display: none;">
@@ -51,7 +65,7 @@
             </div>
         </div>
         <script src="quiz.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="../libraries/aos-master/aos-master/dist/aos.js"></script>
         <script>AOS.init();</script>
     </body>
     
